@@ -1,3 +1,233 @@
-body {
-  color: blue;
+.page {
+  margin: 0;
+  padding: 0;
+
+  @font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_425892_5ja9mzb6wjc3di.eot');
+    src: url('//at.alicdn.com/t/font_425892_5ja9mzb6wjc3di.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_425892_5ja9mzb6wjc3di.woff') format('woff'),
+    url('//at.alicdn.com/t/font_425892_5ja9mzb6wjc3di.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_425892_5ja9mzb6wjc3di.svg#iconfont') format('svg');
+  }
+
+  .nav {
+    background-color: #22c186;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    &__link {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      margin-left: 50px;
+    }
+
+    &__ul {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+
+      &-item {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0 15px;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+
+        &:first-child {
+          margin-left: 20px;
+        }
+
+        &:hover {
+          background-color: darken(#22c186, 3);
+        }
+      }
+    }
+  }
+
+  .section {
+    height: 550px;
+
+    &__title{
+      font-size: 2em;
+      color: #0ac285;
+      padding: 2em 0;
+      text-align: center;
+    }
+  }
+
+  .hero {
+    background-image: linear-gradient(to right, rgba(126, 126, 126, 0.4),
+            rgba(126, 126, 126, 0.4)), url("../images/hero.jpg");
+    background-size: 100%;
+
+    h1 {
+      font-size: 45px;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding-top: 140px;
+      padding-bottom: 60px;
+    }
+
+    &__article {
+      width: 65%;
+      color: #ffffff;
+      text-align: center;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+  }
+
+  .learn {
+    &-item{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__article{
+      text-align: center;
+
+      &-icon{
+        font-family:"iconfont" !important;
+        font-size:16px;font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      &-title{
+        font-weight: bold;
+      }
+
+      &-description{
+        color: #6e6e6e;
+        padding: 0 8em;
+        margin-bottom: 4em;
+      }
+    }
+  }
+
+  .episode{
+    height: inherit;
+    background-color: #eee;
+
+    &-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 10px;
+    }
+
+    &__detail{
+      background-color: #ffffff;
+      width: 23%;
+      height: 300px;
+      margin-bottom: 30px;
+
+      &-head{
+        height: 60px;
+        width: 240px;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+      }
+
+      &-title{
+        background: #d8d8d8;
+        height: 100%;
+        font-weight: bold;
+        width: 190px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 60px;
+
+        &-number{
+          width: 50px;
+          height: 100%;
+          color: #fff;
+          font-size: 3em;
+          line-height: 1.2em;
+          font-weight: bold;
+          background: #666;
+          margin: 0;
+        }
+      }
+
+      &-description{
+        margin: 0 auto;
+        width: 240px;
+        text-align: left;
+        padding: 40px 0;
+
+        &-title{
+          font-size: 16px;
+          font-weight: bold;
+          padding: 2px;
+        }
+
+        &-description{
+          font-size: 16px;
+          line-height: 20px;
+          padding: 2px;
+        }
+      }
+
+      &-link{
+        padding: 0.5em 1em;
+        background: #0ac285;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 100px;
+      }
+    }
+  }
+
+  .show{
+    height: inherit;
+    margin-bottom: 100px;
+
+    &__image{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 30px;
+
+      &-item{
+        width: 25%;
+        height: 225px;
+
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .footer{
+    height: 100px;
+    background-color: #333333;
+    text-align: center;
+
+    &-title{
+      font-weight: bold;
+      font-size: 16px;
+      color: #ffffff;
+      padding-top: 20px;
+      margin: 0;
+    }
+
+    &-description{
+      font-size: 14px;
+      width: 80%;
+      margin: 10px auto 10px auto;
+      color: #9e9e9e;
+    }
+  }
 }
