@@ -58,6 +58,14 @@
   padding: 2em 0;
   text-align: center; }
 
+.page .section__title:after {
+  content: "";
+  display: block;
+  background-color: #cccccc;
+  width: 2em;
+  height: .2em;
+  margin: .4em auto; }
+
 .page .hero {
   background-image: linear-gradient(to right, rgba(126, 126, 126, 0.4), rgba(126, 126, 126, 0.4)), url("../images/hero.jpg");
   background-size: 100%; }
@@ -89,6 +97,7 @@
 
 .page .learn__article-description {
   color: #6e6e6e;
+  width: 240px;
   padding: 0 8em;
   margin-bottom: 4em; }
 

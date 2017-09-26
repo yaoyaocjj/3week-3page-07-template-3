@@ -67,6 +67,15 @@
       color: #0ac285;
       padding: 2em 0;
       text-align: center;
+
+      &:after {
+        content: "";
+        display: block;
+        background-color: #cccccc;
+        width: 2em;
+        height: .2em;
+        margin: .4em auto;
+      }
     }
   }
 
@@ -108,6 +117,7 @@
 
       &-description{
         color: #6e6e6e;
+        width: 240px;
         padding: 0 8em;
         margin-bottom: 4em;
       }
